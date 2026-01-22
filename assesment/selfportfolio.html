@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; 
+            color: #333; 
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 50px;
+            color: crimson; 
+        }
+        header p {
+            color: mediumvioletred; 
+        }
+        header img {
+            border-radius: 50%; 
+            border: 2px solid crimson; 
+        }
+        nav a {
+            color: blue; 
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd; 
+        }
+        h2 {
+            color: crimson;
+        }
+        hr {
+            height: 2px;
+            background-color: blue; 
+            border: none;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px;
+            background-color: crimson; 
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <header style="text-align: center;">
+        <h1>Salil Kumar</h1>
+        <p>Computer Science Student</p>
+        <img src="img.jpg" height="120" width="120" alt="Profile Picture">
+    </header>
+
+    <nav style="text-align: center;">
+        <a href="github.com">Github</a>
+        <a href="leetcode.com">Leetcode</a>
+        <a href="linkedin.com">Linkedin</a>
+    </nav>
+
+    <section>
+        <h2>Projects</h2>
+        <hr>
+        <ul>
+            <li>
+                <h3>Hostel Management App</h3>
+                <p>A full stack decentralized hostel management [<a href="github.com">Link</a>]</p>
+            </li>
+            <li>
+                <h3>URL Shortner</h3>
+                <p>An app to shorten links [<a href="github.com">Link</a>]</p>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <hr>
+        <ul>
+            <li><b>Languages : </b>Python, C++, Java,</li>
+            <li><b>Databases : </b>MySQL, PostgreSQL, MongoDB</li>
+            <li><b>Tools & Platforms : </b>AWS, Git, Github,</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <hr>
+        <table border="1">
+            <thead>
+                <tr>
+                    <td>Degree</td>
+                    <td>Passing year</td>
+                    <td>Institue</td>
+                    <td>CGPA/Percentage</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>BE CSE</td>
+                    <td>2028</td>
+                    <td>Chandigarh University</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>12th PCM</td>
+                    <td>2024</td>
+                    <td>School</td>
+                    <td>8.9</td>
+                </tr>
+                <tr>
+                    <td>10th</td>
+                    <td>2022</td>
+                    <td>School</td>
+                    <td>7.8</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Contact Me</h2>
+        <hr>
+        <form>
+            <label for="name">Enter your name : </label>
+            <input type="text" id="name" name="username" placeholder="Enter your name" required><br>
+
+            <label for="mail">Enter your mail : </label>
+            <input type="email" id="mail" name="mail" placeholder="Enter your mail"><br>
+
+            <label for="reason">Reason for contacting : </label>
+            <select id="reason">
+                <option value="" selected disabled hidden>--select--</option>
+                <option value="job">Job Opportunity</option>
+                <option value="freelance">Freelance Opportunity</option>
+                <option value="training">Training</option>
+            </select><br>
+
+            <label for="feedback">Feedback : </label>
+            <textarea id="feedback"></textarea><br>
+
+            <button>Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; All rights reserved
+    </footer>
+</body>
+</html>
