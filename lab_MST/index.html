@@ -1,0 +1,39 @@
+<!-- Create an Expense Tracker Web Application where users can add, update, delete expenses and calculate total using
+
+Input fields+
+
+Expense Name
+Amount
+Category (Food / Travel / Shopping)
+
+Button
+
+Add Expense
+Update Expense -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Expense Tracker</title>
+</head>
+<body>
+
+<h2>Expense Tracker</h2>
+<input type="text" id="name" placeholder="Expense Name">
+<input type="number" id="amount" placeholder="Amount">
+
+<select id="category">
+<option>Food</option>
+<option>Travel</option>
+<option>Shopping</option>
+</select>
+
+<br><br>
+<button onclick="addExpense()">Add Expense</button>
+<button onclick="updateExpense()">Update Expense</button>
+
+<h3>Expenses</h3>
+<ul id="list"></ul>
+<h3>Total: ₹<span id="total">0</span></h3>
+<script src="script.js"></script>
+</body>
+</html>
